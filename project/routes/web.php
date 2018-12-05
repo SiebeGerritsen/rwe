@@ -24,3 +24,7 @@ Route::get('/projects/create', 'ProjectsController@create', 'ProjectsController@
 Route::post('/projects', 'ProjectsController@store');
 
 Route::get('/dynamic_dependent', 'DynamicDependent@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
